@@ -16,10 +16,10 @@ const routesConfig = [
         path: import.meta.env.DSZ_ROUTER_BASE || '/',
         element: <Layout />,
         children: [
-            { path: '/', element: <Home /> },
-            { path: '/list/:category', element: <ListPage /> },
-            { path: '/detail', element: <DetailPage /> },
-            { path: '/login', element: <Login /> },
+            { path: './', element: <Home /> },
+            { path: './list/:category', element: <ListPage /> },
+            { path: './detail', element: <DetailPage /> },
+            { path: './login', element: <Login /> },
             { path: '*', element: <ErrorPage /> }
         ]
     },
