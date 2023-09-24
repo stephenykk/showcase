@@ -1,0 +1,17 @@
+@import "@/styles/base.scss";
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .app-header {}
+
+    .app-main {
+        flex: 1;
+    }
+
+    .app-footer {
+        overflow: visible;
+    }
+}

@@ -1,0 +1,46 @@
+@import "@/styles/base.scss";
+
+
+.login-page {
+    color: $inputBorderColor;
+    position: relative;
+
+    .col2-set .col-2 {
+        max-width: none !important;
+    }
+
+    .account-login {
+        margin-top: rem(100px);
+
+        width: auto;
+
+        .content {
+            background: none;
+            border: none;
+        }
+
+        .col2-set .col-1.registered-users {
+            max-width: none;
+            width: 50%;
+        }
+    }
+
+
+}
+
+#header-1 #header-top-links .last {
+    display: none;
+}
+
+.SignUpWrap {
+    display: none !important;
+}
+
+body {
+    background: #fff;
+}
+
+.col1-layout {
+    padding: 0px 0px 100px 0px;
+    margin-bottom: 0px;
+}

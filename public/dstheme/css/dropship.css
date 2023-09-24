@@ -1,0 +1,593 @@
+@charset "utf-8";
+
+@font-face { font-family: 'helvetica neue'; src: local('Arial'); }
+@font-face { font-family: 'Scto Grotesk A-M'; src: url('../fonts/Scto Grotesk A Medium.otf') format("opentype"); }
+@font-face { font-family: 'Scto Grotesk A'; src: url('../fonts/Scto Grotesk A Regular.otf') format("opentype"); }
+@font-face { font-family: 'Parafina-BlackL'; src: url('../fonts/Parafina-BlackL.otf') format("opentype"); }
+@font-face { font-family: 'Parafina-BlackM'; src: url('../fonts/Parafina-BlackM.otf') format("opentype"); }
+@font-face { font-family: 'Parafina-BlackS'; src: url('../fonts/Parafina-BlackS.otf') format("opentype"); }
+@font-face { font-family: 'CaslonIonic-Medium'; src: url('../fonts/CaslonIonic-Medium.otf') format("opentype"); }
+@font-face { font-family: 'CaslonIonic-Regular'; src: url('../fonts/CaslonIonic-Regular.otf') format("opentype"); }
+@font-face { font-family: 'CaslonIonic-Bold'; src: url('../fonts/CaslonIonic-Bold.otf') format("opentype"); }
+@font-face { font-family: 'helvetica neue'; font-weight:bold; src: local('Arial'); }
+
+
+/*#sitemenu-main2 { background: none !important;}
+#sitemenu-main2 li a span {  color:#696868; font-family:'Franklin Gothic Book';text-align:center; font-size: 14px; text-transform:uppercase; }
+#sitemenu-main2 li a span span{ color: #000!important;}
+#sitemenu-main2 ul.site-menu{ background: url("https://www.dropshipzone.com.au/dstheme/images/ds/meau2_bg.jpg") no-repeat left center; width: 1300px; height: 34px;} 
+#sitemenu-main2 ul.site-menu>li{ width: 325px; background: url("https://www.dropshipzone.com.au/dstheme/images/ds/meau2_bg.jpg") no-shang right center;  } */
+#ad_menu_block { background: none !important; margin-top: 13px;}
+#ad_menu_block ul li span {  color:#696868; font-family:'Franklin Gothic Book';text-align:center; font-size: 14px; text-transform:uppercase; display: block; }
+#ad_menu_block ul li span span{ color: #000!important;}
+#ad_menu_block ul.ad_menu{ background: url("https://www.dropshipzone.com.au/dstheme/images/ds/meau2_bg.jpg") no-repeat left center; width: 1305px; height: 34px;}
+#ad_menu_block ul.ad_menu>li{ width: 326px; background: url("https://www.dropshipzone.com.au/dstheme/images/ds/meau2_bg.jpg") no-repeat right center; float: left;  }
+#ad_menu_block ul.ad_menu>li.last{ width: 327px; }
+/*header*/
+.header{ width:1300px; padding: 0px; margin-bottom: 15px; z-index: 999; }
+
+.site-menu{ overflow: visible; }
+.header .rs-menu li{ float: left; padding-right: 14px; background: url("https://www.dropshipzone.com.au/dstheme/images/ds/header_bg.jpg") no-repeat right center; margin-left: 16px}
+.header .rs-menu li.last{ background: none; padding-right: 0px;}
+.header .rs-menu li.first{margin-left: 0px;}
+
+#sitemenu-main li > a:hover span{ background: #fff!important;}
+#sitemenu-main .site-menu>li#item-59 > a span{ /*background: #77c2cc!important; */padding-right: 7px!important;  ;color: #fff!important;}
+/*Firefox*/
+@-moz-document url-prefix(){
+       #sitemenu-main .site-menu>li.last#item-59 > a span{
+                padding-right: 16
+        }
+}
+
+/*main-container*/
+.std{ padding-left: 0;}
+.main-container{ background: none;  margin-bottom:50px; }
+.cms-how-dropshipzone-works .col-main .std h2{margin-bottom: 70px; }
+.col-main .std p{ font-size: 16px; line-height: 150%; margin-bottom: 20px; }
+.col-main .std table{font-size: 16px; margin-left: 35px;}
+
+/* cms-warranty-returns*/
+.cms-warranty-returns .std h2{ margin-bottom: 25px;}
+
+
+/*cms-terms-and-conditions*/
+.cms-terms-and-conditions .std .subhead{ font-size: 16px; line-height: 50px; }
+
+/*payment-methods*/
+form .sp-methods dt > span { cursor: pointer; font-size: 14px; font-weight: normal; }
+
+
+/*order_import*/
+.cms-order-import .import_order ul,.cms-order-import .import_order ol{ font-size: 16px; margin-top: 25px; list-style: none; padding-left: 34px;}
+.cms-order-import .lower-alpha{ list-style: lower-alpha;}
+.cms-order-import .style-none{ list-style: none;}
+.cms-order-import .style-none strong{ font-size: 16px; display: inline-block; margin-bottom: 15px;}
+.cms-order-import .style-none ul{ margin-top: 0px;}
+.cms-order-import .style-none p{ margin-bottom: 0px; margin-top: 45px;}
+.cms-order-import .style-none img{ display: block;}
+.cms-order-import .decimal { list-style: decimal; margin-top: 0px; padding-left: 0!important; }
+.cms-order-import .decimal li{ font-size: 16px;}
+.cms-order-import .std ol{ padding-left: 0;}
+.cms-order-import .std ol li{ margin-bottom: 25px; font-size: 16px; width: 840px;}
+.cms-order-import .std ol li li{ margin-bottom: 0px;}
+.cms-order-import .std ol .note{ font-weight: bold;font-size: 16px; color: #575757; margin-top: 25px;}
+.cms-order-import .std li span{ padding-right: 20px;}
+.cms-order-import  .import_order ol .note{ padding-left: 30px;}
+.cms-order-import  .import_order ol ul.one li{ background: url("https://www.dropshipzone.com.au/dstheme/images/ds/disc_faq.jpg") no-repeat left center; padding-left: 15px;}
+/*cms-about-us*/
+.cms-about-us .std h3{ margin-bottom: 20px; color: #000000;}
+
+
+/*home*/
+#user-guide-list{ clear: both; height: 800px;}
+#user-guide-list .user-guide{ float: left; width: 335px; margin-right: 140px; height: 400px;}
+#user-guide-list .user-guide dt{ background:url("https://www.dropshipzone.com.au/dstheme/images/ds/how_dropshipzone_works_bg.png") no-repeat; width: 317px; height: 190px;}
+#user-guide-list li.one dt{ background-position:0 -440px;}
+#user-guide-list li.two dt{ background-position:0 -1785px;}
+#user-guide-list li.three dt{  background-position:0 -665px; }
+#user-guide-list li.four dt{ background-position:0 0; }
+#user-guide-list li.five dt{ background-position:0 -890px;}
+#user-guide-list li.six dt{background-position:0 -1115px; }
+#user-guide-list li.three{ margin-right: 0}
+#user-guide-list li.six{ margin-right: 0;}
+#user-guide-list .user-guide h3{font-size: 21px; color: #7f7f7f;}
+#user-guide-list .user-guide .user-guide-content{ color: #575757;  font-size: 16px; line-height: 120%;}
+.summary{ width: 1000px; border-top: 1px dashed #626262; border-bottom: 1px dashed #626262; height: 145px;  padding-left: 150px;padding-top: 45px;  padding-right: 150px; font-size: 16px; line-height: 150%;}
+.sign-up-block{ width: 1300px; height: 143px; background: #f2f2f2;font-size: 36px; color: #7f645a;text-align: center;line-height: 143px; margin-bottom: 38px;}
+.sign-up-block a:link,.sign-up-block a:visited,.sign-up-block a:hover { text-decoration:none; width: 290px; height: 60px; background: #77c2cc; color: #ffffff!important; padding: 12px 70px; margin-left: 35px;  font-size: 21px;}
+
+
+
+/*my account*/
+li.add-contact-person > img,
+li.sub-contact-person > img { cursor: pointer; }
+.col-left .block-account .block-title{ height: 45px!important;}
+.block-account .block-title strong { color: #575757; line-height: 45px; font-size: 14px;}
+.title-buttons button{ display: none;}
+.addresses-primary h2{ display: none;}
+
+.col-left .block .block-title{ background:none; padding: 9px 15px; border-bottom: none; }
+.fieldset ul.form-list li .field{ width: auto;}
+
+
+.sidebar .page-title{ font-size: 14px; margin: 8px 0;}
+.sidebar .page-title a{ color: #575757; text-decoration: none; font-family: 'Segoe UI Symbol';}
+.sidebar .page-title strong{ font-weight: normal;}
+.welcome-msg  p.hello  strong{font-weight: normal!important; color: #575757;}
+.col2-left-layout .col-main{ width: 945px; }
+.sidebar .block-content{ border:none; padding: 0}
+.sidebar .block-content ul{ border-top: 1px solid #eaeaea;}
+.sidebar .block-content li{ font-size: 16px; color:#6d6d6d; border:none;}
+.sidebar .block-content li strong,.sidebar .block-content li.current a{ font-weight: normal; color: #000000;}
+.sidebar .block-content li a{ border: none; font-size: 16px; color: #575757;}
+.col-left .block .block-title{ padding: 0}
+.my-account .page-title  h1{ font-weight: 300; font-size: 30px; color: #575757; background: none; text-align:left;  height: 50px; }
+.my-account>.page-title{ margin-bottom:30px; border-bottom: 1px solid #eaeaea; padding:0!important;float:none !important;width:100% !important;}
+.welcome-msg .hello{ font-size: 21px; font-weight: normal!important;}
+.box-account .box-head{ margin-bottom: 15px;}
+.my-account .box-account .box-head h2{ font-size: 21px; color: #575757; text-transform: capitalize; font-weight: 300;}
+.my-account .box-account .box-head a{ font-size: 16px; color: #575757!important; }
+.my-account .box-info .box-content p { font-size: 14px; }
+.dashboard .welcome-msg{ margin-bottom: 10px;}
+.data-table{ border: 0}
+.data-table thead th{ border: 0;background: none; font-size: 16px; font-weight:normal!important; padding:0 30px 0 10px; height: 28px;}
+.data-table tbody tr{ font-size: 16px;background: none!important; border: 0; }
+.data-table tbody tr td{ border: 0;padding:0;padding-right: 55px; font-size: 14px; height: auto;}
+.data-table tbody tr td a{ color:#575757!important; }
+.data-table td.last, .data-table th.last{ padding: 0;}
+.block-list .block-title strong{  text-transform:capitalize;text-shadow:none; font-size: 18px; color:#575757;  font-weight:normal;}
+.block .empty{ padding: 0}
+.back-link{display: none!important;}
+#form-validate .fieldset h2{ display: block; margin:20px 0 30px 0; color: #000; font-size: 18px; font-weight: 500; font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";}
+
+
+/*my address*/
+.col2-set .addresses-primary{  width: 100%; margin:0 auto 15px;}
+.addresses-list li.item { border: none; background-image: none; padding: 0; }
+.addresses-list .addresses-primary  h3 { color: #111111; font-size: 16px; font-weight: normal; }
+.addresses-list .addresses-primary address{ line-height: 1.8; padding-left: 20px; }
+.address-book{ float: right; }
+.customer-address-info{ clear: both; overflow: hidden; font-size: 16px; }
+.customer-address-info li{ width:90%; clear: both; }
+.customer-address-info li label,.customer-address-info li span{ float: left; line-height: 22px; }
+.customer-address-info li label{ font-weight: normal; padding-right: 12px; height: 22px; line-height: 22px; width: 100px; text-align: left ;color: #666666; }
+.addresses-list{ margin-top: 10px;}
+.addresses-primary{font-size: 16px; color: #6d6d6d;}
+.addresses-primary ol li { height: 26px;}
+.addresses-primary ol li label{ float: left; width: 138px; font-size: 16px; color: #6d6d6d;}
+.addresses-primary ol li label label{ width:89px;}
+.addresses-primary ol li label span{ float: right; margin-right: 45px;}
+.addresses-primary ol.billing{ float: left; margin-right: 170px; }
+.addresses-primary ol.shipping{ float: left; }
+.addresses-primary > ol > p{ text-align: left!important; margin-top: 5px;}
+.addresses-primary  ol p a{ padding: 0; color: #fff!important; width: 179px; height: 38px; background: #febf47; font-weight: normal; display: inline-block;; text-align: center;line-height: 38px; font-size: 16px;}
+.addresses-primary .addresses-additional { margin-top: 50px; width: 100%;}
+.addresses-primary .addresses-additional ol .left{ display: none;}
+.addresses-primary .addresses-additional ol li p a{padding: 0; color: #fff!important; width: 179px; height: 38px; background: #febf47; font-weight: normal; display: inline-block;; text-align: center;line-height: 38px; font-size: 16px;}
+.addresses-list .addresses-additional{ float: right;}
+.addresses-list li.empty{height: auto;overflow: hidden;}
+.addresses-list li.empty p{ overflow: hidden;}
+.nodisplay{ display: none;}
+.shipping li.empty { width: 650px; margin-top: 50px;}
+
+
+/*#+padding-right: 7px!important; padding-right: 7px\0!important; padding-right: 15px\9\0!important;
+*
+/*place order*/
+.account-upload-order .upload-batch, .account-upload-order .place-an{ padding-top: 15px!important; border: none;}
+#order-new .title{ font-size: 18px; color: #000;margin-top: 0!important;  font-weight: 500;}
+
+.account-upload-order .page-title{ margin-bottom: 10px!important; }
+.products li em{ color: red; float: left;}
+
+
+
+
+#interest-categories li.level1 span.expand{ padding-right: 20px;}
+#interest-categories .parent-node>span.switch-icon{ vertical-align: middle; display: inline-block; cursor:pointer; width:16px;height:16px;padding-right:4px; background: url("https://www.dropshipzone.com.au/dstheme/images/plus.png") no-repeat left bottom;}
+#interest-categories li.parent-node>span.expand{background: url("https://www.dropshipzone.com.au/dstheme/images/minus.png") no-repeat left bottom; padding-right: 4px;}
+#interest-categories button.button { margin-top: 20px; cursor: pointer;width: 120px;height: 38px;font-size: 21px;background: #FEBF47; float: right; }
+#interest-categories button.button span { font-size: 16px; border: none; background: none; font-weight: normal; }
+#interest-categories ul.level1 { margin-bottom: 20px; }
+
+
+
+
+
+
+
+/*Edit Address*/
+.customer-address-form .form-list .select-container input{ height: 24px; border: 1px solid #000; background: url('https://www.dropshipzone.com.au/dstheme/images/ds/select_icon.jpg') no-repeat 400px center; cursor: pointer;}
+.fieldset ul.form-list li.rs_note{ height: auto;}
+
+.customer-address-form .my-account #form-validate .select-container ul li{ margin-bottom: 0!important;}
+.fieldset .validation-advice{ width: auto;}
+
+
+
+
+/*#order-new ul.products li.first .autocomplete-loading { position: absolute; }*/
+.account-upload-order ul.products > li.icon{ width:30px!important;}
+
+
+/*site-header*/
+#site-header{  border-bottom: none; margin-bottom: 10px;  }
+#site-header a{ color: #575757; display: block; font: 18px/1.5 'Segoe UI' ,Arial,Helvetica,sans-serif; text-transform:capitalize; padding-left: 0px; text-shadow: none; text-decoration: none; }
+/*left-nav*/
+#sitemenu-categories{ border-top: 1px solid #eaeaea;}
+#sitemenu-categories #site-header h2{ font-size: 21px; color: #fff; background: #febf47; height: 38px; width: 262px; text-align: center; line-height: 38px; margin-bottom: 15px;}
+.cms-page-view .site-menu{ overflow: visible;}
+.col-left .js-menu-left ul.site-menu{ margin-bottom:15px; position:relative; z-index: 0;  }
+.col-left .js-menu-left ul.site-menu li a{ border-bottom: none!important; font-size: 16px; text-decoration: none !important; display: block; padding-left: 5px; }
+.col-left .js-menu-left ul.site-menu>li{position:relative; z-index: 100;  line-height: 30px;  background:url('https://www.dropshipzone.com.au/dstheme/images/ds/site_menu_bg.png') 195px center no-repeat; margin-bottom: 10px;}
+.col-left .js-menu-left ul.site-menu li.last{ border-bottom: none; }
+.col-left .js-menu-left ul.site-menu li ul{ position: absolute; top:-4px!important; left:261px!important; z-index: 100; text-align: left; margin-top: -27px; width:245px!important; margin: 4px 0;  background-color:;background: #ffffff; border:1px solid #e5e5e5;}
+.col-left .js-menu-left ul.site-menu li ul >li{ padding-left: 5px;}
+.col-left .js-menu-left ul.site-menu >li >a{height: 30px; text-decoration: none; color: #505050; display: block; background: url('https://www.dropshipzone.com.au/dstheme/images/ds/site_menu_bg.png') 195px center no-repeat; }
+.col-left .js-menu-left ul.site-menu >li>a:hover,.col-left .js-menu-left ul.site-menu li a.selected{ background: #efefef url('https://www.dropshipzone.com.au/dstheme/images/ds/site_menu_bg.png') 195px center no-repeat!important;}
+.col-left .js-menu-left ul.site-menu li > a:hover,.col-left .js-menu-left ul.site-menu li > a.selected { background-color:#efefef!important; color: #444444!important; text-shadow: 0 1px #ffffff!important; }
+.col-left .js-menu-left ul.site-menu li a img.downarrowclass{ border-width:4px 6px!important; border-color:transparent transparent transparent #cfcfcf!important; border-style:solid!important; width:0px; height:0px; line-height:0px; }
+.col-left .js-menu-left ul.site-menu li a img{ position: absolute; top:12px; right:7px; z-index: 100; display: none;; }
+.col-left .js-menu-left ul.site-menu li ul >li.level-2:hover { background: #F4F4F4!important; cursor: pointer; }
+
+/*block-compare*/
+.block-compare{ border-top: 1px solid #eaeaea!important;padding-top: 10px;}
+.block-compare .block-title strong{ background: none; padding-left: 0;}
+
+/*NEW LETTER*/
+.block-subscribe {border-top: 1px solid #eaeaea!important; padding-top: 10px;}
+.block-subscribe .block-title strong{ background: none; padding-left: 0; font-size: 18px; font-weight: normal; color: #575757; text-transform: capitalize;}
+
+.block-subscribe label{ color: #626262; display: block; font-size: 11px; font-weight: normal; line-height: 18px; margin: 2px 0 8px; text-transform: none; }
+.block-subscribe .input-box{ background:url("https://www.dropshipzone.com.au/dstheme/images/ds/emil_input_bg.png") no-repeat; margin-bottom: 15px; min-height: 21px; padding:5px 10px 6px 33px; text-align: left; width: 165px; }
+.block-subscribe input.input-text{ background: none repeat scroll 0 0 transparent; border: medium none; display:block;  }
+.block-subscribe .validation-failed{ background: none!important; border: none!important;}
+.block-subscribe .block-content{ background: none;  border-top: none; }
+.block-subscribe input.input-text, textarea{ padding: 3px 2px; width: 262px}
+.block-subscribe input.input-text { width: 169px;}
+.block-subscribe .actions{ height: 35px; line-height: 35px; }
+.block-subscribe button.button{ float: left!important; position: relative; border: none!important; background: #febf47!important; width: 134px; height: 29px; }
+.block-subscribe button.button span{ height: 29px; line-height: 29px; text-align: center; background: #febf47; border: none; text-transform: uppercase; font-size: 16px; font-weight: normal; }
+.block-subscribe button.button span span{ background-position: 100% 0; padding:0 15px 0 9px; }
+
+/*block-viewed */
+.block-viewed{border-top: 1px solid #eaeaea!important;padding-top: 10px; }
+.block-viewed .block-title strong{ background: none; padding-left: 0;}
+.block-viewed .block-content{ background: none; border-top: none; border-bottom: none; }
+.block-viewed .block-content li.item{ border-bottom: 1px #f0f0f0 solid; padding-bottom: 5px; }
+.block-viewed ol li{ background: none!important; }
+.block-viewed ol li a{ text-decoration: none; color:#505050; }
+.block-viewed ol li a:hover{ text-decoration:underline; }
+
+
+/*col-right*/
+.col-right{ float:right; padding: 0 0 1px; width:260px; }
+.col-right .block .block-title{ background:none; padding:0; border-bottom: none;  margin-bottom: 18px;}
+.col-right .block{ border: none!important; border-bottom: 1px solid #eaeaea!important; padding-bottom: 20px; width: 260px;}
+
+
+.product-view .product-img-box .more-views .more-left span{
+	background:url("https://www.dropshipzone.com.au/dstheme/images/ds/arrow_left.png") no-repeat left top !important;
+    display:block; overflow: hidden; width:18px!important; height:25px!important; margin-top:15px;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+.product-view .product-img-box .more-views .more-right span{
+	background:url("https://www.dropshipzone.com.au/dstheme/images/ds/arrow_left.png") no-repeat right top !important;
+    display:block; overflow: hidden; width:18px!important; height:25px!important; margin-top:15px;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+
+
+/*recently-viewed-items*/
+#recently-viewed-items .product-name span{ font-size: 12px; width: 170px; display: inline-block;}
+
+/*featured-products*/
+.col-main .featured-products .block-title{ position: relative; background: url("https://www.dropshipzone.com.au/dstheme/images/s/title_bg_img.png") -3px -2px no-repeat; height: 37px; border-radius: 8px 8px 0 0; }
+.col-main .featured-products .block-title h3{ height: 37px; line-height: 37px; text-indent: 16px; color: #747474; font-size: 18px; font-weight: bold; }
+.cms-products .products-grid li.item{ height:280px;}
+#sitemenu-categories{border-top:1px solid #eaeaea; padding-top: 13px;}
+
+
+/*bestsellers-products*/
+.col-main>.bestsellers-title{ background: url("https://www.dropshipzone.com.au/dstheme/images/rs/title_bg_img.png") -3px -2px no-repeat; height: 37px; margin-top: 8px; width:761px; }
+.col-main .bestsellers-title h2{ height: 37px; line-height: 37px; text-indent: 16px; color: #747474; font-size: 18px; font-weight: bold; }
+.category-products>.toolbar-bottom .toolbar .sorter { display: block; background: none; }
+.toolbar-bottom{ margin-top: 40px; position: relative; }
+.col-main>.category-products{ 
+	border-bottom:0;
+	/* width:939px; */
+	border-top:none;
+	width: auto;
+	/* float: left; */
+
+}
+
+/*box-description*/
+.box-description .std ul { list-style: none; padding: 0; font-size: 16px;}
+.box-description .std table {  margin-left: 0; }
+.box-description .std table tr td { padding-left: 0; }
+/*messages_success-msg*/
+.messages li.success-msg{ background: none!important; color:#999999; border: 1px #cccccc solid; height: 46px; line-height: 46px; padding:0 0 0 30px!important;}
+.messages li.success-msg span{ font-size: 16px; font-weight: normal;}
+/*messages_error-msg*/
+.messages li.error-msg,.messages li.warning-msg,div.error-msg{ background: none!important; color:#ff0000; border: 1px #ff0000 solid; height: 46px; line-height: 46px; padding:0 0 0 30px!important;}
+.messages li.error-msg span,.messages li.warning-msg span,div.error-msg{ font-size: 16px!important; font-weight: normal!important;}
+
+/*note-msg*/
+.catalogsearch-result-index .col-main .page-title{ margin: 0 0 15px 0; padding-bottom: 10px; }
+.col-main .note-msg{ background: none; font-size: 14px; border: none!important; padding-left: 0!important; color: #575757;}
+.catalogsearch-result-index .page-title h1{ font-size: 30px; color: #575757; font-weight: normal; font-weight: 100; font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";}
+.breadcrumbs{ display: block;height: 30px; line-height: 30px; color: #575757; font-size: 14px;font-family: 'Segoe UI Symbol'}
+.catalogsearch-result-index .breadcrumbs strong{ font-weight: 600!important;}
+.catalogsearch-result-index .block-layered-nav{ display: none;}
+.catalog-category-view #sitemenu-categories #site-header h2{ display:none;}
+/*breadcrumbs*/
+
+
+/*compare-items*/
+.item  p a{ display: inline-block; width: 220px; height: 43px; overflow: hidden; text-decoration: none;}
+#compare-items .item img{ float: left;width: 43px; height: 43px;}
+#compare-items .item label{ float: right; font-size: 12px; width: 165px; height: 35px; line-height: 20px; cursor: pointer;}
+
+/*popular-category*/
+.popular-category{ overflow: hidden; width: 945px; }
+.popular-category .title { background: none;}
+.popular-category .list .product-name{ font-size: 18px; margin-top: 15px;}
+.popular-category .list .product-name a{ font-size: 16px;}
+.popular-category .title h2,#home-bestseller .title h2{ font-size: 28px; font-weight: 100;}
+#home-bestseller .title h2{ font-size: 28px; font-weight: 100;margin:80px 0 25px 0;}
+.popular-category .title {height: 37px; position: relative; border-radius: 8px 8px 0 0; behavior: url(css3pie/pie.htc); }
+.popular-category .list{ margin-top:38px;}
+.popular-category .list .category-grid-first{ border-bottom: 1px solid #e5e5e5;}
+.popular-category .list ul{ overflow: hidden; background:none; border: none;}
+.popular-category .list ul li{ float: left; width: 155px; min-height: 150px;padding: 0; text-align: center; position: relative; border-right: 1px solid #e5e5e5; width: 235px;padding:0; height: 280px;}
+.popular-category .list ul li.last{border-right:none;}
+.popular-category .list ul li img{ width:217px; height: 217px; }
+.popular-category .categories-all-link{ float: right; margin:10px 20px; }
+
+/*gredit limit*/
+.main-containe .credit-center .tab-content{ float: left; width: 617px;  }
+.main-containe .credit-center .credit-form{ width: 617px;border: none;}
+.main-containe .credit-center .credit-form .form-list{ margin-top: 50px;}
+.main-containe .credit-center .credit-form .form-list li{ float: left; width: 370px}
+.main-containe .credit-center .credit-form .form-list input{ float: right;}
+.main-containe .credit-center .credit-form  #checkout-payment-method-load{ width: 170px;}
+.main-containe .credit-center .credit-form  #checkout-payment-method-load input{ float: right;}
+
+
+
+
+
+/*account-create*/
+/*.main-container{  height: 1550px;}
+.main-container #form-validate,.main-container .main{ height: 1000px;}*/
+/*#download-list .control_input_right #download_all_new,
+#download-list .control_input_right > label { display: none;}*/
+.rs_cs_accountscontactemail .telephone{ width: 942px; overflow: hidden;; padding:15px 0;}
+.login .form-list label.mode{ padding-top: 0;}
+
+
+/*my order list*/
+.account-ftp-user .pager, .rsdropship-statistics-index .pager,
+.rsdropship-download-skuslist .pager,
+.account-upload-order .pager{ background: none; border: none; width: 942px; padding: 0; margin: 15px 0;}
+.account-ftp-user .pager .sorter, .rsdropship-statistics-index .pager .sorter,
+.rsdropship-download-skuslist .pager .sorter,
+.account-upload-order .pager .sorter{ background: none;float: right; padding: 0;}
+.account-ftp-user .pager .limiter, .rsdropship-statistics-index .pager .limiter,
+.rsdropship-download-skuslist .pager .limiter,
+.account-upload-order .pager .limiter{ float: left; margin-left: 105px; font-size: 16px; color: #6d6d6d;}
+.account-ftp-user .pager .limiter label, .rsdropship-statistics-index .pager .limiter label,
+.rsdropship-download-skuslist .pager .limiter label,
+.account-upload-order .pager .limiter label{  vertical-align:baseline;}
+.account-ftp-user .pager .limiter a, .rsdropship-statistics-index .pager .limiter a,
+.rsdropship-download-skuslist .pager .limiter a,
+.account-upload-order .pager .limiter a{ color:#303030!important; text-decoration: none; line-height: 33px; font-size: 14px; }
+.account-ftp-user .pager .limiter .current a, .rsdropship-statistics-index .pager .limiter .current a,
+.rsdropship-download-skuslist .pager .limiter .current a,
+.account-upload-order .pager .limiter .current a{ color: #303030!important; font-weight: 600;}
+.account-ftp-user .pager .amount, .rsdropship-statistics-index .pager .amount,
+.rsdropship-download-skuslist .pager .amount,
+.account-upload-order .pager .amount { font-size: 14px; color: #303030; line-height: 33px; }
+.account-ftp-user .pager .limiter label, .rsdropship-statistics-index .pager .limiter label,
+.rsdropship-download-skuslist .pager .limiter label,
+.account-upload-order .pager .limiter label{  vertical-align:baseline; float: left; font-size: 14px; line-height: 33px; color: #303030;}
+.account-ftp-user .limiter .page_limit, .rsdropship-statistics-index .limiter .page_limit,
+.rsdropship-download-skuslist .limiter .page_limit,
+.account-upload-order .limiter .page_limit{ float: left; }
+.account-ftp-user .limiter .page_limit li, .rsdropship-statistics-index .limiter .page_limit li,
+.rsdropship-download-skuslist .limiter .page_limit li,
+.account-upload-order .limiter .page_limit li{ float: left;  margin-left: 6px; padding-right: 5px;}
+
+.account-upload-order .page-title{ margin-bottom: 10px; padding-bottom:10px; border-bottom:0; }
+.rsdropship-order-new .account-upload-order .page-title{ border-bottom:0; }
+#order-search li.order-searchs label{ float: none; margin: 0 5px 0 2px;}
+#order-search > button { width: 63px;}
+#order-search input { padding-left: 5px;}
+#order-search li .select-container { float: left; margin-top: 2px; line-height: 26px;}
+ul #order-search{ background: none;}
+ul #order-search li{ font-size: 16px; margin-right: 20px; }
+ul #order-search  li.last .button{ width: 150px; height: 27px;}
+#order-search .select-container{}
+.order-searchs .button{ margin-right: 5px; }
+#order-list-table .table-action td{ padding-right: 0;}
+#order-list-table .table-action #bt_delselected {float: none;}
+#order-list-table tr.table-action  td .unpaid_order{  margin-left: 650px;}
+
+/*sitemap*/
+.page-sitemap .page-title h1{ background: #febf47; width: 304px; height: 38px; text-align: center; line-height: 38px; font-size: 23px; color: #fff;}
+.page-sitemap #sitemap_top_links{ float: right;height: 30px; width: 200px; }
+.page-sitemap .links{ margin: 0;}
+.page-sitemap .links li{ height: 30px; background:#febf47!important;  width: 200px; color: #fff; text-align: center; line-height: 30px; font-size: 16px; display: inline-block;}
+.page-sitemap .links li a{ color: #fff!important;}
+.page-sitemap .pager { clear: both;font-size: 16px; background: none; padding: 0; border-top: none;}
+.page-sitemap .pager .amount{ float: left;}
+.page-sitemap .pager .pages{ float: left; padding-left: 50px; margin: 0;}
+.page-sitemap .pager .pages strong{ font-weight: normal;}
+.page-sitemap .sitemap li{ font-size: 16px;}
+.page-sitemap .sitemap li a{ color: #575757!important;}
+.page-sitemap .sitemap li.level-0 a{ color:#febf47!important;}
+.page-sitemap .sitemap li.level-1 a{ color:#575757!important;}
+.page-sitemap{ position: relative;}
+.page-sitemap .level--1{ display: none;}
+.sitemap{ float: left; width: 300px;}
+.page-sitemap>.links{ position: absolute;right: 0;bottom: -30px;}
+/*cms-index-noroute*/
+.cms-index-noroute .col-left { display: none;}
+.cms-index-noroute .page-title h1{ font-size: 30px; font-family:'Segoe UI Symbol'; font-weight: 500;}
+.cms-index-noroute .std .noroute{ font-size: 16px;}
+
+/*checkout-multishipping-success*/
+.checkout-multishipping-success .need-help{ border:1px solid #eaeaea; padding: 15px 20px 6px 20px;}
+.checkout-multishipping-success .buttons-set{ padding: 35px 0 0; }
+
+
+/* billing information*/
+.multiple-checkout #multishipping-billing-form li .year{ margin-right: 0px;}
+.sp-methods .form-list .input-text{ width: 263px; height: 24px;}
+.multiple-checkout #multishipping-billing-form li .select-container #verisign_cc_type{ width: 263px!important; height: 24px;}
+.sp-methods .form-list select.month { width: 142px!important;height: 24px;}
+.sp-methods .form-list select.year{ width: 102px!important; height: 24px;}
+.multiple-checkout #multishipping-billing-form li .select-container #verisign_expiration-input{ width: 149px; background-position: 122px center;}
+.multiple-checkout #multishipping-billing-form li .select-container #verisign_expiration_yr-input{ width: 104px; background-position: 85px center;}
+.sp-methods .form-list  label{ width: auto;}
+
+
+
+
+
+
+/*catalog-product-compare-index*/
+.catalog-product-compare-index .page-title h1{ font-size: 30px; font-family:Segoe UI Light; color: #575757; }
+.compare-table tr.first td{ text-align: center!important;}
+.compare-table tr.first td h2,.compare-table tr.first td div{ text-align: left!important;}
+.compare-table tbody th { background: none; border: none;}
+.compare-table tbody tr.last th, .compare-table tbody tr.last td{ border: none!important;}
+.compare-table tr.add-to-row td{ background: none;}
+.compare-table tbody th, .compare-table tbody td{padding: 0; padding-right: 20px;}
+.compare-table tr.add-to-row td{ text-align: left;}
+.compare-table tbody td.last{ border-right: none;}
+/*order-table*/
+.my-account #my-orders-table td img { width: 44px; height: 33px; border: 1px solid #000; }
+/*Edit Address*/
+.customer-address-form .form-list li.wide input.input-text{ width: 420px;}
+
+
+
+
+
+
+/*col-main*/
+.col-main a{padding: 0;}
+
+
+/*check box*/
+.form-list .input-box input[type="checkbox"]{ border: none;}
+
+
+
+/*order confirmation*/
+.multiple-checkout .order-sucess-info p{ font-size: 16px;}
+.multiple-checkout .order-sucess-info{ float: left;}
+.multiple-checkout .order-sucess-info .sub-title{ font-size: 16px; font-weight: normal; color: #575757;}
+.multiple-checkout .order-sucess-info .order_number{ margin: 0; margin-top: 5px;}
+.multiple-checkout .order-sucess-info .order_details{ margin-bottom: 15px;}
+
+.multiple-checkout .need-help{ float: right;}
+.multiple-checkout .need-help .sub-title{ color: #575757; font-weight: normal; font-size: 16px;}
+.multiple-checkout .need-help p{ font-size: 14px; color: #575757;}
+.multiple-checkout .order-sucess-info p a,.multiple-checkout .need-help p a{ color: #575757!important;}
+.checkout-multishipping-success .multiple-checkout .buttons-set .button span{ width: 179px; height: 38px;}
+
+.multiple-checkout .place-order .please-wait{ padding: 72px 7px 0 0;}
+
+
+
+
+
+/*Purchased Statistics*/
+.purchased-center .tab-head ul li { font-size: 16px; font-weight: normal;}
+
+
+/*table*/
+.data-table tr th { font-weight: 600;}
+#my-orders-table {width: 945px;}
+#my-orders-table th {padding: 0 30px 0 0;}
+#my-orders-table td {padding: 0 30px 0 0;}
+.rsdropship-order-batch .account-upload-order label em {float: left;}
+
+/*customer-account-resetpassword*/
+.customer-account-resetpassword .page-title h1{margin-top: 25px; width: 304px; height: 38px; font-size: 21px;  color: #fff;text-align: center;line-height: 38px;}
+.customer-account-resetpassword .form-list .field{ float:none; margin-bottom: 20px;}
+.customer-account-resetpassword .form-list .field .input-text{ width: 350px;}
+
+
+/*order view*/
+.title-buttons #order-info-tabs{ position:relative;}
+.title-buttons #order-info-tabs .frist{ position: absolute;}
+.title-buttons #order-info-tabs .last{ position: absolute;right:185px;}
+
+
+
+/* My Order List*/
+.rsdropship-order-index .order-list #order-new .data-table tr td.last a{ text-decoration: underline; }
+
+/*product page*/
+.delivery-list strong.free-shipping{ font-weight: normal; }
+
+
+
+
+/*My ORDER LIST*/
+tr.grandtotal td{border-top: 1px solid #3e3e3e!important; text-align: right; font-weight: bold; }
+
+.payment_temp_box ul li.selectapaymentmethod{display: none;}
+
+/*Download SKu*/
+.downloadMaxSku{ font-weight: bold; font-size: 14px; line-height: 30px; border: 1px solid #000; padding-left: 5px;}
+
+
+
+
+
+/*Clearance*/
+#sitemenu-main .site-menu #item-82 span, #sitemenu-main .site-menu #item-90 span{background: #e84c3d!important; color: #fff!important;}
+
+
+/*Become a Supplier*/
+.rsforms-supplier-index .col-main{ width: 973px;}
+.rsforms-supplier-index .page-title h1{  font-size: 21px; color:#FA9D23; width: 303px; height: 38px; background: #febf47; text-align: center; line-height: 38px; color: #fff; font-family: 'Segoe UI Symbol'}
+.rsforms-supplier-index .information{ font-size: 16px; margin-bottom: 20px;}
+.rsforms-supplier-index .validate{position: relative;}
+.rsforms-supplier-index .validate label{ font-size: 16px; color: #575757; font-weight: normal!important; float: left; margin-right: 84px;line-height:26px;} 
+.rsforms-supplier-index .validate .input-box,.rsforms-supplier-index .validate .refresh_code{ float: left; margin-right: 5px;}
+.rsforms-supplier-index .validate .input-box{ position: relative;}
+.rsforms-supplier-index .validate .validate_code_img{ width:130px; height: 28px; line-height:26px; position: absolute;top: 0; left: 85px;}
+.rsforms-supplier-index .validate .input-box input{ border:1px solid #575757; height: 22px;}
+.rsforms-supplier-index .validate .refresh_code{ line-height: 28px; position: absolute; left: 408px;}
+.rsforms-supplier-index  #message, .rsforms-supplier-index .validate .input-box input{ font-size: 16px; color: #575757;}
+
+
+/*Checkout*/
+.multishipping-overview-table tfoot tr td table tr th{ border:0; padding-right: 50px;}
+.multishipping-overview-table tfoot tr td table tr:nth-child(2)  th strong , .multishipping-overview-table tfoot tr td table tr:nth-child(2)  td strong { color: #575757; font-weight: normal; }
+.multishipping-overview-table tfoot tr td table tr td.last {text-align: right!important; width: 100px; padding-right: 102px; }
+
+/* Agree */
+.agrees .agree .validation-advice{ position: absolute;}
+.agrees label em {margin:  2px 5px 0 0;}
+
+
+/*Register */
+.form-list li.sub-contact-person{position: relative;}
+.form-list li.sub-contact-person .rs_cs_accountscontactperson div.icon{ position: absolute; bottom: 0; right: 290px; }
+.sub-contact-person div.rs_cs_accountscontactperson > label{ display: none; }
+.sub-contact-person div.rs_cs_accountscontactperson > img { position: absolute; bottom: 0; right: 290px; }
+.form-list li.rs_cs_accountscontactperson { position: relative;}
+.form-list li.rs_cs_accountscontactperson > .add-contact-person { position: absolute; bottom: 5px; right: 290px; cursor: pointer;}
+
+/* Place Order Batch Orders  */
+.account-upload-order .warning{ margin-bottom: 10px; font-size: 12px; display: block; color: #FFA700; }

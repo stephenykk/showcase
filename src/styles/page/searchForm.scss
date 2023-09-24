@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+
+
+#search_form .search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+#search_form .search input {
+
+    height: 44px;
+    text-indent: 39px;
+    background-color: #591C97;
+    color: #fff;
+    font-family: 'Scto Grotesk A';
+    font-weight: 400;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    vertical-align: baseline;
+    font-size: 14px !important;
+    margin: 10px 0;
+}
+
+
+#search_form .search input:focus {
+
+    box-shadow: none;
+}
+
+#search_form .search .fa-search {
+
+    position: absolute;
+    color: #fff;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+
+#search_form .search button {
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 34px;
+    width: 110px;
+    background: blue;
+
+}
+
+#search_suggestion {
+    z-index: 9999;
+    background: #fff;
+}
+
+#search_form .search ul {
+    display: inline-block;
+    height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+
+}
+
+#search_form .search li {
+    padding: 0 10px;
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+#search_form .search li:hover,
+#search_form .search li:hover .amount {
+    background-color: #942FFB;
+    color: #fff;
+    cursor: pointer;
+}
+
+#search_form .search li:hover {
+    border-left: solid 2px #fff;
+}
+
+#search_form .search li span {
+    float: right;
+}
+
+textarea:focus,
+input:focus {
+    outline: none !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    #search_form>div,
+    #search_form {
+        padding: 0;
+    }
+}
+
+/*
+    * search ai hint
+     */
+#search_feature {
+    z-index: 9999;
+    position: absolute;
+    left: 0px;
+    top: 54px;
+    display: none;
+    border-radius: 8px;
+}
+
+.search_ai_dom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.search_ai_main {
+    padding: 10px 10px;
+    background: #fff;
+    width: 90%;
+    border-radius: 8px;
+}
+
+.search_ai_title {
+    color: #3D3C3B;
+    font-family: 'Scto Grotesk A-M', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin: 0 2%;
+}
+
+.search_ai_close {
+    float: right;
+}
+
+.search_ai_content {
+    font-family: 'Scto Grotesk A-M', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}

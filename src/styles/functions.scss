@@ -1,0 +1,8 @@
+@function rem($val) {
+    $val: if(unit($val)==px, $val, $val * 1px);
+    @return calc($val / 16px) * 1rem
+}
+
+@function alphaColor($color, $opacity: 0.6) {
+    @return rgba(red($color), green($color), blue($color), $opacity);
+}
