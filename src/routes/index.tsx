@@ -11,15 +11,17 @@ import { lazy } from 'react'
 const DetailPage = lazy(() => import('@/views/DetailPage/DetailPage'))
 const Login = lazy(() => import('@/views/Login/Login'))
 
+const routerRootPath = import.meta.env.DSZ_ROUTER_BASE || '/'
+console.log("🚀 ~ file: index.tsx:15 ~ routerRootPath:", routerRootPath)
 const routesConfig = [
     {
-        path: import.meta.env.DSZ_ROUTER_BASE || '/',
+        path: routerRootPath,
         element: <Layout />,
         children: [
-            { path: './', element: <Home /> },
-            { path: './list/:category', element: <ListPage /> },
-            { path: './detail', element: <DetailPage /> },
-            { path: './login', element: <Login /> },
+            { path: '', element: <Home /> },
+            { path: 'list/:category', element: <ListPage /> },
+            { path: 'detail', element: <DetailPage /> },
+            { path: 'login', element: <Login /> },
             { path: '*', element: <ErrorPage /> }
         ]
     },

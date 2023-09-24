@@ -5,6 +5,7 @@ import type { CategoryItem } from '@/services/category'
 
 let navigate: NavigateFunction
 
+const routerRootPath = import.meta.env.DSZ_ROUTER_BASE || '/'
 
 export function initNav(navFn: NavigateFunction) {
     navigate = navFn
@@ -12,13 +13,13 @@ export function initNav(navFn: NavigateFunction) {
 
 export function goLogin(searchParams?: Obj, options: NavigateOptions = {} as NavigateOptions) {
     navigate({
-        pathname: '/login',
+        pathname: routerRootPath + 'login',
         search: searchParams ? '?' + queryStringify(searchParams) : ''
     }, options)
 }
 
 export function goHome() {
-    navigate('/')
+    navigate(routerRootPath)
 }
 
 export function goBack(n: number = -1) {
@@ -57,7 +58,7 @@ export function readableCateTitle(title: string) {
 export function goListPage(cate: CategoryItem, searchParams?: Obj, state: Obj = {} as any) {
     const normalTitle = normalizeCateTitle(cate)
     navigate({
-        pathname: '/list/' + normalTitle,
+        pathname: routerRootPath + 'list/' + normalTitle,
         search: searchParams ? '?' + queryStringify(searchParams) : ''
     }, { state })
 }
