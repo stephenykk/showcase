@@ -10,15 +10,16 @@ const resolve = (filePath) => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   envDir: resolve('./src/env'),
   envPrefix: 'DSZ_',
   plugins: [
-    react(), 
+    react(),
     createSvgIconsPlugin({
-    iconDirs: [resolve('./src/assets/images/icons')],
-    symbolId: 'icon-[name]'
-  })
-],
+      iconDirs: [resolve('./src/assets/images/icons')],
+      symbolId: 'icon-[name]'
+    })
+  ],
   resolve: {
     alias: {
       "@": resolve('./src')

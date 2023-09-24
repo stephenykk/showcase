@@ -13,7 +13,7 @@ const Login = lazy(() => import('@/views/Login/Login'))
 
 const routesConfig = [
     {
-        path: '/',
+        path: import.meta.env.DSZ_ROUTER_BASE || '/',
         element: <Layout />,
         children: [
             { path: '/', element: <Home /> },
