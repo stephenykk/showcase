@@ -58,6 +58,7 @@ axiosInst.interceptors.response.use((res) => {
         }
     }
     logger.error('接口异常:', error.config?.url, error);
+    toast.error('接口异常:' + error.config?.url + ', ' + error.message)
     return Promise.reject(error)
 })
 
