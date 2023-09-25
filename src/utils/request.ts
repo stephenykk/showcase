@@ -49,10 +49,12 @@ axiosInst.interceptors.response.use((res) => {
     // 接口返回未授权，则跳登录页
     if (error?.response?.status === UNAUTH_CODE) {
         const isLoginApi = error.config?.url?.startsWith('/auth')
+        // const isLoginPage = location.pathname.startsWith('/login')
+        const isLoginPage = location.hash.startsWith('#/login')
         if (isLoginApi) {
             toast.error('login fail')
         } else {
-            toast.error('please log in first', () => goLogin({ return: 1 }, { replace: location.pathname.startsWith('/login') }))
+            toast.error('please log in first', () => goLogin({ return: 1 }, { replace: isLoginPage }))
         }
     }
     logger.error('接口异常:', error.config?.url, error);

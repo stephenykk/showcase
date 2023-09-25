@@ -12,6 +12,7 @@ export function initNav(navFn: NavigateFunction) {
 }
 
 export function goLogin(searchParams?: Obj, options: NavigateOptions = {} as NavigateOptions) {
+    console.log("🚀 ~ file: nav.ts:15 ~ goLogin ~ options:", options)
     navigate({
         pathname: routerRootPath + 'login',
         search: searchParams ? '?' + queryStringify(searchParams) : ''

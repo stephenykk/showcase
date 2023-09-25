@@ -32,14 +32,17 @@ function Home() {
         }
     })
 
-    useMounted(async () => {
+    const mountedCallback = async () => {
         // is ready 
-        if (mainState.cateTree.category_id) {
-            return
-        }
+        // if (mainState.cateTree.category_id) {
+        //     return
+        // }
 
-        const cateTree = await getCategory()
-        actions.setCateTree(cateTree)
+        // const cateTree = await getCategory()
+        // actions.setCateTree(cateTree)
+    }
+    useMounted(() => {
+        setTimeout(mountedCallback, 1000);
     })
 
     return (
