@@ -53,7 +53,6 @@ pnpm preview
     **注意问题:**
 
     -   接口调用触发了 `preflight` 预检请求, 接口没有处理 `OPTIONS` 请求方法，导致 CORS 报错
-    -   采用的是 `history` 路由，Github Page 只提供静态文件托管，非首页刷新会导致 404
 
 ## 部署
 

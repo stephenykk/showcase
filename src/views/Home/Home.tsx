@@ -20,7 +20,7 @@ function Home() {
     const userState = useSelector<RootState, RootState['user']>(state => state.user)
     const mainState = useSelector<RootState, RootState['main']>(state => state.main)
     const dispatch = useDispatch()
-    logger.info('userState:', userState, dispatch)
+    logger.info('userState:', userState, dispatch, mainState, typeof getCategory)
     const actions = useActions()
     console.log("🚀 ~ file: Home.tsx:21 ~ Home ~ actions:", actions)
 
